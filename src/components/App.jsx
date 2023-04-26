@@ -1,16 +1,18 @@
+import Section from './section/Section';
+import Profile from './task-01/Profile';
+import user from '../data/user.json';
+console.log(user);
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Section title="Завадання 1 - Профіль соціальної мережі">
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+    </Section>
   );
 };
