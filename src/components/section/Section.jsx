@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Section({ title, children }) {
+import css from './Section.module.css';
+
+export default function Section({ title, children, cssVariant }) {
   return (
-    <section className="section">
-      {title && <h2>{title}</h2>}
+    <section className={css[cssVariant]}>
+      {title && <h2 className="sectionTitle">{title}</h2>}
       {children}
     </section>
   );

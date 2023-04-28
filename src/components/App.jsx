@@ -5,7 +5,10 @@ console.log(user);
 
 export const App = () => {
   return (
-    <Section title="Завадання 1 - Профіль соціальної мережі">
+    <Section
+      title="Завадання 1 - Профіль соціальної мережі"
+      cssVariant="taskOne"
+    >
       <Profile
         username={user.username}
         tag={user.tag}
