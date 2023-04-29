@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import defaultImage from 'images/default.jpg';
 import css from './Profile.module.css';
 
-// import user from '../../data/user.json';
-// console.log(user);
-
 export default function Profile({
   username = 'unknown',
   tag,

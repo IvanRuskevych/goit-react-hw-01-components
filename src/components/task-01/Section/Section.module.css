@@ -14,7 +14,16 @@
   background-color: #b7cbe5;
 }
 
+.taskTwo {
+  composes: section;
+  width: 400px;
+  height: 250px;
+  background-color: #b7cbe5;
+}
+
 .sectionTitle {
-  color: red;
+  padding-top: 10px;
+
+  color: #fff;
   text-align: center;
 }
