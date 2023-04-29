@@ -28,6 +28,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 img {
@@ -36,7 +38,12 @@ img {
   height: auto;
 }
 
-.sectionTitle {
-  color: #fff;
-  text-align: center;
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  font-style: normal;
 }
