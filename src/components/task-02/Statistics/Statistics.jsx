@@ -1,4 +1,3 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
 
 import SpanText from '../SpanText/SpanText';
@@ -8,9 +7,7 @@ export default function Statistics({ stats }) {
   return (
     <ul className={css.statList}>
       {stats.map(({ id, label, percentage }) => (
-        <li className={css.item} key={id}>
-          <SpanText label={label} percentage={percentage}></SpanText>
-        </li>
+        <SpanText key={id} label={label} percentage={percentage}></SpanText>
       ))}
     </ul>
   );
@@ -23,5 +20,5 @@ Statistics.propTypes = {
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     })
-  ),
+  ).isRequired,
 };
