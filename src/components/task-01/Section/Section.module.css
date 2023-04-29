@@ -21,6 +21,13 @@
   background-color: #b7cbe5;
 }
 
+.taskThree {
+  composes: section;
+  width: 400px;
+  height: 530px;
+  background-color: #b7cbe5;
+}
+
 .sectionTitle {
   padding-top: 10px;
 

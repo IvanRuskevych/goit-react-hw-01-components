@@ -1,13 +1,15 @@
 import Section from './task-01/Section/Section';
-import Profile from './task-01/Profile/Profile';
 import TitleSecond from './task-01/TitleSecond/TitleSecond';
 
+import Profile from './task-01/Profile/Profile';
 import Statistics from './task-02/Statistics/Statistics';
+import FriendList from './task-03/FriendList/FriendList';
 
 import user from '../data/user.json';
 import data from '../data/data.json';
+import friends from '../data/friends.json';
 
-// console.log(user);
+console.log(friends);
 
 export const App = () => {
   return (
@@ -33,6 +35,15 @@ export const App = () => {
         ></TitleSecond>
         <TitleSecond title="upload stats" cls="titleStat"></TitleSecond>
         <Statistics stats={data}></Statistics>
+      </Section>
+
+      <Section cls="taskThree">
+        <TitleSecond
+          title="Завадання 3 - Список друзів"
+          cls="titleSecond"
+        ></TitleSecond>
+
+        <FriendList items={friends}></FriendList>
       </Section>
     </>
   );
