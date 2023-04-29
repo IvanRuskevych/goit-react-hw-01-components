@@ -1,15 +1,15 @@
 .titleSecond {
   padding-top: 10px;
   margin-bottom: 20px;
-  color: #fff;
   text-align: center;
+
+  color: #fff;
 }
 
 .titleStat {
+  margin-bottom: 30px;
+  text-align: center;
+
   text-transform: uppercase;
   color: #fff;
-  /* margin-top: 30px; */
-  margin-bottom: 30px;
-
-  text-align: center;
 }

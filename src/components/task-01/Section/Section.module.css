@@ -1,36 +1,14 @@
 .section {
   margin: 50px;
-  /* border: 3px solid red; */
+  padding-bottom: 30px;
 
-  /* width: 400px;
-  height: 500px;
-  background-color: #b7cbe5; */
-}
-
-.taskOne {
-  composes: section;
   width: 400px;
-  height: 500px;
-  background-color: #b7cbe5;
-}
 
-.taskTwo {
-  composes: section;
-  width: 400px;
-  height: 250px;
-  background-color: #b7cbe5;
-}
-
-.taskThree {
-  composes: section;
-  width: 400px;
-  height: 530px;
   background-color: #b7cbe5;
 }
 
 .sectionTitle {
   padding-top: 10px;
-
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
