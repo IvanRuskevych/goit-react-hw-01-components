@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
-// import Transaction from '../Transaction/Transaction';
-
-import css from './TransactionList.module.css';
+import Transaction from '../Transaction/Transaction';
 
 export default function TransactionList({ items }) {
   return (
     <tbody>
       {items.map(({ id, type, amount, currency }) => {
         return (
-          <tr key={id}>
-            <th className={css.column}>{type}</th>
-            <th>{amount}</th>
-            <th>{currency}</th>
-          </tr>
+          <Transaction
+            key={id}
+            type={type}
+            amount={amount}
+            currency={currency}
+          ></Transaction>
         );
       })}
     </tbody>

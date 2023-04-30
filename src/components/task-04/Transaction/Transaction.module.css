@@ -1,0 +1,21 @@
+.column {
+  text-align: left;
+  padding-left: 10px;
+}
+
+tr {
+  text-align: center;
+  height: 45px;
+}
+
+tr:nth-child(n) {
+  background-color: #fff;
+}
+tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+
+tr,
+th {
+  border: none;
+}
